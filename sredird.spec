@@ -1,0 +1,47 @@
+Summary:	RFC 2217-compliant serial port redirector
+Summary(pl):	Program przekierowuj±cy port szeregowy zgodny z RFC 2217
+Name:		sredird
+Version:	1.1.8
+Release:	1
+License:	GPL
+Group:		Networking
+Group(de):	Netzwerkwesen
+Group(es):	Red
+Group(pl):	Sieciowe
+Group(pt_BR):	Rede
+Source0:	ftp://metalab.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
+Patch0:		%{name}-time.patch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+sredird is a serial port redirector that is compliant with the RFC
+2217 "Telnet Com Port Control Option" protocol. This protocol lets you
+share a serial port through the network.
+
+%description -l pl
+sredird jest programem przekierowuj±cym port szeregowy zgodnym z RFC
+2217 (Telnet Com Port Control Option protocol). Protokó³ ten pozwala
+na udostêpnianie portu szeregowego przez sieæ.
+
+%prep
+%setup -q
+%patch -p1
+
+%build
+%{__make} CC="%{__cc}" CFLAGS="%{rpmcflags}"
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_sbindir}
+
+install sredird $RPM_BUILD_ROOT%{_sbindir}
+
+gzip -9nf README
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc *.gz
+%attr(755,root,root) %{_sbindir}/*

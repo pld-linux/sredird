@@ -1,3 +1,5 @@
+# TODO:
+# - SECURITY: http://securitytracker.com/alerts/2004/Aug/1011038.html    
 Summary:	RFC 2217-compliant serial port redirector
 Summary(pl):	Program przekierowuj±cy port szeregowy zgodny z RFC 2217
 Name:		sredird

@@ -1,0 +1,10 @@
+--- sredird-1.1.8/sredird.c.orig	Thu Nov  9 17:47:32 2000
++++ sredird-1.1.8/sredird.c	Thu Sep  6 11:43:05 2001
+@@ -48,6 +48,7 @@
+ #include <netinet/in.h>
+ #include <netinet/ip.h>
+ #include <netinet/tcp.h>
++#include <time.h>
+ 
+ /* Version id */
+ #define SredirdVersionId "Version 1.1.8, 09 November 2000"

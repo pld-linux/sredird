@@ -1,12 +1,12 @@
 Summary:	RFC 2217-compliant serial port redirector
 Summary(pl):	Program przekierowuj±cy port szeregowy zgodny z RFC 2217
 Name:		sredird
-Version:	2.2.0
+Version:	2.2.1
 Release:	1
 License:	GPL
 Group:		Networking
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
-# Source0-md5:	b413417cf38664d558c86007667984d6
+# Source0-md5:	a6b8f03ddb9657f533bd218110c3e635
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

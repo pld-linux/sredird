@@ -9,6 +9,7 @@ License:	GPL
 Group:		Networking
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
 # Source0-md5:	a6b8f03ddb9657f533bd218110c3e635
+URL:		http://www.ibiblio.org/pub/Linux/system/serial/!INDEX.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

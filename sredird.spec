@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Networking
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/serial/%{name}-%{version}.tar.gz
+# Source0-md5:	42494e118a6c9992f03f55ef74a373b6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -1,5 +1,5 @@
 Summary:	RFC 2217-compliant serial port redirector
-Summary(pl):	Program przekierowuj±cy port szeregowy zgodny z RFC 2217
+Summary(pl.UTF-8):   Program przekierowujÄ…cy port szeregowy zgodny z RFC 2217
 Name:		sredird
 Version:	2.2.2
 Release:	1
@@ -15,10 +15,10 @@ sredird is a serial port redirector that is compliant with the RFC
 2217 "Telnet Com Port Control Option" protocol. This protocol lets you
 share a serial port through the network.
 
-%description -l pl
-sredird jest programem przekierowuj±cym port szeregowy zgodnym z RFC
-2217 (Telnet Com Port Control Option protocol). Protokó³ ten pozwala
-na udostêpnianie portu szeregowego przez sieæ.
+%description -l pl.UTF-8
+sredird jest programem przekierowujÄ…cym port szeregowy zgodnym z RFC
+2217 (Telnet Com Port Control Option protocol). ProtokÃ³Å‚ ten pozwala
+na udostÄ™pnianie portu szeregowego przez sieÄ‡.
 
 %prep
 %setup -q

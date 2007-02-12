@@ -1,5 +1,5 @@
 Summary:	RFC 2217-compliant serial port redirector
-Summary(pl.UTF-8):   Program przekierowujący port szeregowy zgodny z RFC 2217
+Summary(pl.UTF-8):	Program przekierowujący port szeregowy zgodny z RFC 2217
 Name:		sredird
 Version:	2.2.2
 Release:	1
